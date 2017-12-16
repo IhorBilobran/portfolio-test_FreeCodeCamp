@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|El+Messiri|Merienda+One');
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Merienda One', cursive;
+font-family: 'El Messiri', sans-serif;
+*/
+
+body, html, h1, p, ul, ol, li{
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    font-family: "RobotoRegular";
+    color: var(--text-color);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+/*
+declare variable
+*/
+
+:root{
+    --main-grey-color: #616161;
+    --main-white: #F5F5F5;
+    --main-light-grey: #9E9E9E;
+    --text-color: #212121;
+    --secondary-text-color: #757575;
+    --special-color: #009688;
+}
+
+.container {
+	width: 100%;
+    height: 105vh;
+	margin: 0;
+	padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+    /* main block */
+
+.main {
+    background: var(--main-grey-color);   
+}
+
+    /*HEADER*/
+
+.header {
+    background-color: var(--main-grey-color);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.head-item {
+    padding: 15px;
+}
+
+.head-item a {
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+.head-item a:hover {
+    color: var(--special-color);
+    transition: all .3s ease-in-out;
+}
+
+    /* main content*/
+
+.section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 88%;
+    position: relative;
+    background-image: url(../img/f3fd338b-0d65-42e5-9651-6782870f5d71.png) ;
+     background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.main-img {
+}
+
+.main-about-me {
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+}
+
+.ihor {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'El Messiri', sans-serif;
+    margin-right: 30px;
+    color: #979797;
+}
+
+.slogan {
+    text-align: right;
+    color: var(--special-color);
+    font-family: "NautilusPompiliusRegular";
+    font-size: 1.2em;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    right: 48%;
+    width: 60px;
+    height: 50px;
+    background: var(--main-grey-color);
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+.ar {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/down-chevron.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /*animation: arrAnimation .4s ease-in-out forwards;
+*/}
+/*
+@keyframes arrAnimation {
+    0% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: translate(1.1);
+    }
+}
+*/
+/* end of main */
+
+
+/* start projects*/
+
+.projects-description {
+    background: var(--special-color);
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+    .projects-description .description {
+        padding: 20px 40px;
+        margin-bottom: 15px;
+        border: 2px solid var(--text-color);
+        color:var(--text-color);
+        font-size: 1.4em;
+        text-transform: uppercase;
+    }
+
+.projects-list-wrapper {
+    background: var(--main-white);
+    height: 70%;
+    border-top: 2px solid var(--text-color);
+    box-shadow: 0px 3px 15px 0px #9a9898 inset;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+    .projects-list-wrapper .list {
+        padding-top: 10px;
+        height: 90%;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+        .list .list-item {
+            height: 90%;
+            width: 300px;
+            margin-left: 13%;
+            display: inline-block;
+/*            border-top: 2px solid #979797;            
+            border-bottom: 2px solid #979797;            
+*/            
+            
+        }
+
+        .list .list-item:last-child {
+            margin-right: 13%;
+        }
+
+            .list-item .name {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 1.2em;
+                color: var(--secondary-text-color);
+                margin-bottom: 10px;
+
+            }
+
+            .list-item .img {
+                width: 100%;
+                height: 75%;
+                box-shadow: 0px 3px 15px 0px #9a9898;
+                background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
+        
+        .img-bike-card {
+            background-image: url(../img/bike-baner.png);            
+        }
+
+        .img-tesla-card {
+            background-image: url(../img/tesla-baner.png);            
+        }
+        
+                    /*list hover effects*/
+        
+
+        .list .list-item:hover {
+/*            border-top: 1px solid lightblue;            
+*/            border-bottom: 1px solid var(--special-color);            
+            }
+
+        .list .list-item:hover .img {
+            transform: scale(1.1);
+            transition: transform .3s linear;
+        }
+
+/* 
+        end of projects list */
+
+
+
+/*about me*/
+
+.about-main-image {
+    width: auto;
+    height: 53%;
+    background-image: url(https://static1.squarespace.com/static/503f90c5c4aa93dffe120ad5/t/518970ade4b0884a65fe69e3/1367961776584/tommaso-nervegna.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.main-me {
+    height: 80%;
+    display: flex;
+    background: var(--special-color);
+}
+
+.me-img {
+    width: 40%;
+    height: auto;
+    background-image: url(https://scontent.fdnk1-1.fna.fbcdn.net/v/t1.0-9/23131917_287252505101330_8528133188543481105_n.jpg?oh=7c006dcaa5648824dcaf3bc62e68f810&oe=5AD34410);
+    background-position: top;
+    box-shadow: 0px 5px 25px 0px var(--text-color); 
+    filter: grayscale(70%);
+    background-size: cover;
+    position: relative;
+    top: -25px;
+    left: 20px;
+}
+
+.skills {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    background: var(--main-light-grey);
+    margin-left: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 3x 25px 0px var(--text-color) inset;
+}
+
+.description { 
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--text-color);
+}
+    .description p:last-child {
+        padding-top: 15px;
+    color: var(--text-color);
+        border-top: 1px solid var(--text-color);
+    }
+
+.skills-list {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-list .list-item {
+    width: 80px;
+    height: 80px;
+    margin-top: 8px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.html {
+    background-image: url(https://www.sololearn.com/Icons/Courses/1014.png);
+}
+.css {
+    background-image: url(https://www.sololearn.com/Icons/Courses/1023.png);
+}
+.botstrap {
+    background-image: url(https://getbootstrap.com/assets/img/bootstrap-stack.png);
+}
+.js {
+    background-image: url(https://www.sololearn.com/Icons/Courses/1024.png);
+}
+.jQ {
+    background-image: url(https://www.sololearn.com/Icons/Courses/1082.png);
+}
+
+/* contact block */
+
+.contact {
+    height: 50vh;
+    border-top: 5px solid var(--main-light-grey);
+    background: var(--main-grey-color);
+}
+
+.write-me {
+    flex: 1 1 0;
+    padding-top: 20px;
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+    .write-me p {
+        text-align: center;
+    }
+
+.write-me ul {
+    display: flex;
+    justify-content: center;
+}
+
+.write-me ul li {
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid transparent;
+}
+
+.write-me ul li:hover {
+    border-bottom: 2px solid var(--special-color);
+    transition: all .5s ease;
+} 
+
+
+.footer {
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25%;
+    background: var(--main-light-grey);
+}
