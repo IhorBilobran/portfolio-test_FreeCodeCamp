@@ -6,8 +6,8 @@ font-family: 'El Messiri', sans-serif;
 */
 
 body, html, h1, p, ul, ol, li{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
     font-family: "RobotoRegular";
     color: var(--text-color);
@@ -33,10 +33,10 @@ declare variable
 }
 
 .container {
-	width: 100%;
+    width: 100%;
     height: 105vh;
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -82,9 +82,9 @@ declare variable
     justify-content: space-between;
     height: 88%;
     position: relative;
-    background-image: url(../img/f3fd338b-0d65-42e5-9651-6782870f5d71.png) ;
+    background-image: url(https://images.fineartamerica.com/images-medium-large/black-and-grey-sunset-carole-martinez.jpg) ;
      background-size: cover;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -98,35 +98,36 @@ declare variable
 }
 
 .ihor {
-    font-size: 3em;
+    font-size: 4em;
     text-transform: uppercase;
     font-family: 'El Messiri', sans-serif;
     margin-right: 30px;
-    color: #979797;
+    color: var(--text-color);
 }
 
 .slogan {
     text-align: right;
     color: var(--special-color);
     font-family: "NautilusPompiliusRegular";
-    font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.3m;
 }
 
 .arrow {
     position: absolute;
     bottom: 0;
-    right: 48%;
+    right: 46%;
     width: 60px;
     height: 50px;
-    background: var(--main-grey-color);
     box-sizing: border-box;
     padding-bottom: 10px;
 }
 .ar {
     width: 100%;
     height: 100%;
-    background-image: url(../img/down-chevron.png);
+    background-image: url(http://www.pngmart.com/files/3/Down-Arrow-PNG-File.png);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     /*animation: arrAnimation .4s ease-in-out forwards;
 */}
@@ -146,7 +147,8 @@ declare variable
 /* start projects*/
 
 .projects-description {
-    background: var(--special-color);
+    background: url(https://ak6.picdn.net/shutterstock/videos/9228413/thumb/1.jpg);
+    background-position: center;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -183,14 +185,16 @@ declare variable
 
         .list .list-item {
             height: 90%;
-            width: 300px;
+            width: 400px;
             margin-left: 13%;
             display: inline-block;
-/*            border-top: 2px solid #979797;            
-            border-bottom: 2px solid #979797;            
-*/            
-            
-        }
+     }
+    
+@media screen and (min-width: 1080px){
+    .list .list-item {
+        width: 500px;
+    }
+}
 
         .list .list-item:last-child {
             margin-right: 13%;
@@ -215,11 +219,11 @@ declare variable
             }
         
         .img-bike-card {
-            background-image: url(../img/bike-baner.png);            
+            background-image: url(https://photos-2.dropbox.com/t/2/AAAuPvQitepoBCJWNDpGw8p6BoZnbbmlDkwU9PJge22EFw/12/681250577/png/32x32/1/_/1/2/bike-baner.png/EIeP0MoFGAIgBygH/NgvkqETllZo5RIW2LRdS6NRIclnBD-dMApVyTCS-5kg?preserve_transparency=1&size=2048x1536&size_mode=3);            
         }
 
         .img-tesla-card {
-            background-image: url(../img/tesla-baner.png);            
+            background-image: url(https://photos-4.dropbox.com/t/2/AADmG06myWqWSsbYWZ_1YRRc6gFNpz_9If18NprH5k5wYA/12/681250577/png/32x32/1/_/1/2/tesla-baner.png/EIeP0MoFGAIgBygH/Aga14aMu_EluQPKyFOTgdy3DU2CCOXVVYS6nqFLEZtA?preserve_transparency=1&size=2048x1536&size_mode=3);            
         }
         
                     /*list hover effects*/
@@ -269,6 +273,8 @@ declare variable
     left: 20px;
 }
 
+
+
 .skills {
     box-sizing: border-box;
     width: 50%;
@@ -281,6 +287,16 @@ declare variable
     margin-bottom: 20px;
 
     box-shadow: 0px 3x 25px 0px var(--text-color) inset;
+}
+@media screen and (max-width: 480px){
+    .me-img {
+        display: none;
+    }   
+    .skills {
+        width: 100%;
+        margin: 0;
+        
+    }
 }
 
 .description { 
