@@ -110,7 +110,7 @@ declare variable
     color: var(--special-color);
     font-family: "NautilusPompiliusRegular";
     font-weight: bold;
-    font-size: 1.3m;
+    font-size: 1.3em;
 }
 
 .arrow {
